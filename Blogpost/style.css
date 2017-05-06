@@ -1,0 +1,435 @@
+/*   
+Theme Name: BLANK Theme
+Description: This is just a BLANK starter WordPress Theme template -- WordPress v3.4.6
+Author: Mua rachmann
+Version: 1.0.1
+*/
+
+/*============= Global styles ============*/
+*{
+	margin:0;
+	padding: 0;
+}
+
+article , figure , aside ,p ,footer , header ,nav ,setion {
+	
+	display: block;
+}
+
+body{
+	background-color:#ccc;
+	
+}
+
+h1 h2 h3  li{
+	
+	margin: 1ex 1em
+	
+}
+p.clear{
+	clear:both;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*rach======= @outerdiv ====mann*/
+#page-wrap{
+	background-color:white;
+    max-width: 1024px; /* max-width makes frame responsive */
+    height: auto;
+	display: block;
+	margin: 0 auto;
+	background: #fff;
+}
+
+/*rach======= @header div ====mann*/
+header {
+
+	color:#fff;
+	background: #ff01a1 url(../Blogimages/wod.jpg) repeat;
+	padding:5%;
+	margin: 5px 0 0 0;
+	
+	}
+	
+#header-container{
+	    position:relative;
+		margin:0 auto;
+		margin-left:39.0625%;
+		font-family:Open Sans Condensed;
+	}
+	
+#title_tag{
+		margin-left:-69.1025641025641%;
+		float:left;
+	
+	
+}
+#header-container h1{
+	font-size:25px;
+	font-weight:normal;	
+}
+
+#header-container p{
+	font-size:12px;
+	text-transform:uppercase;
+	color:gold;
+}
+		
+#logo img{
+	width:150px;
+}
+
+nav{
+	font-family: Helvetica, Arial, ans-serif;
+}
+
+nav ul{
+	list-style-type: none;
+	padding:0;
+	margin: 0;
+	display:inline-block;
+	
+}
+nav li{
+	margin: 0;
+	padding: 0;
+	float:left;
+	
+}
+nav ul li a{
+	font-family: Trebuchet MS,sans-serif;
+	display: block;
+	text-decoration: none;
+	line-height: 25px;
+	padding:5px;
+	margin-right: 10px;
+	color:white;
+
+}
+
+nav ul  li.link1:hover{
+	
+	cursor: default;	
+	border-bottom:2px solid #ffe;
+}
+
+.submitButton{
+    background-color: Transparent;
+    color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	cursor:pointer;
+	
+}
+/*rach======= @Global styles ====mann*/
+
+#notice{
+	float:right;
+	background-color:#ff01a1;
+	padding:10px;
+	margin-right:50px;
+	font-family:Arial;
+	font-size:1.2em;
+	color:white;
+}
+
+
+/*=========== main content======*/
+
+#mainContent{
+	margin-top:40px;
+	float: left;
+	width:700px;
+
+}
+
+#slider-wrapper {
+  width: 500px;
+  height:350px;
+  padding:50px;
+  position: relative;
+
+}
+
+.mySlides {
+    display: none;
+	width: 500px;
+    height:350px;
+}
+
+/* ====== Caption text =======*/
+.text {
+  color: deeppink;
+  font-size: 20px;
+  padding: 2px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+/*===== Number text (1/3 etc) ======*/
+.numbertext {
+  color: deeppink;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right:25px;
+  width: auto;
+  padding: 3px;
+  color: brown;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.8s ease;
+  border-radius:5px 0 0 5px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right:5px;
+  border-radius:0 5px 5px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* ============The dots/bullets/indicators =============*/
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dotContainer{
+	 width: 300px;
+	margin-left:265px; 
+}
+
+.active, .dot:hover {
+  background-color: deeppink;
+}
+
+/*================= block quotes ================*/
+
+fieldset{
+	width:400px;
+	margin:0 auto;
+	color:#999;
+    font-family:Georgia,serif;
+	font-size:1.4em;
+	padding:10px;
+	
+}
+
+legend{
+	color:deeppink;
+	font-size:1.5em;
+	font-family:Chiller;
+	
+}
+
+
+/*============ SideBar ================*/
+
+aside{
+	border-left:2px solid deeppink;
+	padding:5px 5px 5px 25px;
+	margin-top:20px;
+	float: right;
+    width:270px;
+	
+}
+
+/*++++++ widgets ++++++ */
+
+.widget{
+	margin: 2px 0 5px 0;
+	
+
+}
+
+.date span{
+	
+	position: absolute;
+	left: 100%;
+	top:0;
+	width: 15px;
+	height: 100%;
+	background-color: deeppink;
+	
+}
+
+.widget h3{
+	font-size: 20px;
+	text-shadow: 2px 2px 4px white;
+	text-align: left;
+	background-color:dimgray;
+	letter-spacing: 1px;
+	color: white;
+	
+}
+
+.widget .date{
+    position: relative;
+	text-align: left;
+	background-color:deeppink;
+	color: #F1E48D;
+	letter-spacing: 2px;
+	padding:3px;
+	margin: 5px 0 5px 0px;
+}
+
+.widget h4{
+	font-weight: normal;
+	font-size: 20px;
+	margin: 0 0 5px 0;
+}
+
+.widget p{
+    color: #999;
+	font-family: Trebuchet MS,sans-serif;
+	line-height: 1.3em;
+	font-size:0.9em;
+	margin: 0 0 3ex 0;
+	
+	
+}
+
+/* +++++++++++ social media ++++++++++ */
+
+#socialMedia{
+	margin:0 0 15px 0;
+	
+}
+#socialMedia ul{
+	display:inline-block;
+	list-style-type:none;
+	
+}
+
+#socialMedia ul li {
+	float:left;
+	padding:2px;
+	
+}
+#socialMedia ul li img{
+	width:49px;
+	height:49px;
+	
+}
+
+
+/*================== footer =================*/
+div#fixedfooter {
+	bottom:0px;
+	max-width:1014px;
+	margin: 0 auto;
+	color:#B3B2B2;
+	background:#000;
+	padding:5px;
+}
+
+#Information{
+	float: left;
+	padding:10px;
+}
+
+#Copyright{
+	float: right;
+	padding: 10px;
+	
+}
+
+/*
+--------------------------------------------------------------
+Media Queries Aplenty
+--------------------------------------------------------------
+*/
+
+@media only screen
+and (min-width : 720px ) and (max-width : 1023px) {
+
+	#page-wrap{
+		max-width: 720px;
+	}
+	
+div#fixedfooter {
+		max-width:710px;
+	}
+
+
+}
+
+@media only screen
+and (max-width : 719px ) {
+	
+	#page-wrap {
+		width: 100%;
+	}
+
+	#header {
+		padding: 0px 20px;
+	}
+
+	#searchBox {
+		right: 20px;
+	}
+
+	#searchBox {
+		width: 175px;
+	}
+
+
+	#mainContent {
+		
+	}
+	
+   #fixedfooter {
+		width:100%;
+	}
+
+} /* END max-width : 719px */
+
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; } 
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+	
+} /* END print media */
